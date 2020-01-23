@@ -1,0 +1,118 @@
+---
+title: "Introduction to Data Science"
+subtitle: "Homework 1"
+author: "Nick Ruocco - `nruocco4053@floridapoly.edu`"
+output: html_notebook
+---
+
+
+
+# Problem 1 
+
+During class you completed an activity in which you practiced `git` commands and operations (such as forking a repository, cloning it using `git clone`, and uploading changes using `git push`).
+
+In this exercise you are asked to modify the `flpoly_student.md` file you worked during class, and format it using the **markdown** tools discussed in class. You must **create a table** that shows the courses you are currently enrolled in, using the headers: 
+
+- Prefix: in bold letters (such as **COP**)
+- Number: in bold letters (such as **2073**)
+- Name: in italics (such as _Introduction to Data Science_)
+- Credits (such as 3)
+
+
+## Problem 1
+
+|**Prefix** | **Number** | _Name_                | Credits |  
+|-----------|:----------:|:---------------------:|---------|
+|**MAN**    | **4633**   | _Strategic Management_|   3     |
+|**COP**    | **2073**   | _Introduction to Data science_|   3     |
+|**GEB**    | **3373**   | _International and Comparative Dimensions in Business_|   3     |
+|**EGN**    | **3448**   | _Operations Research_|   3     |
+
+
+
+
+a. Make sure your GitHub repo (`flpoly_DS_2020/`) shows the results of your updated file (remember to use the commands `git add .` , `git commit -m "YOUR MESSAGE"`, and `git push`) 
+
+b. Include a link to your GitHub repo in this document.  https://github.com/nruocco4053/flpoly_DS_2020.git
+
+c. Take a screenshot of the GitHub repo and include it in this document (you can save a copy of the screenshot file in your GitHub repo `flpoly_DS_2020/`)
+
+
+
+# Problem 2
+
+For this problem, you are asked to create a list of **3 concepts** you have learned about this semester, for at least 2 of the courses you are currently taking. Include the name of the course as a sub-heading (that is, using `##`), and the concepts as an unordered list. Make sure to include a link to information about the concept you listed.
+
+_Edit this `.Rmd` file to include the solutions here._
+
+```{r}
+# Problem 2
+## International and Comparative Dimensions in Business
+### Understanding Foreign cultures is key do international business. https://floridapolytechnic.instructure.com/courses/3851
+### The business dealings with another country varies greatly by the type of government. https://floridapolytechnic.instructure.com/courses/3851
+### Larger multinational corporations can negatively effect local economies as much as they can benefit them. https://floridapolytechnic.instructure.com/courses/3851
+
+## Operations Research
+### A proper business should be prepared for the unlikely.  https://floridapolytechnic.instructure.com/files/1874425/download?download_frd=1
+### Quality control is an important part of success. https://floridapolytechnic.instructure.com/files/1874425/download?download_frd=1
+### A business is more successful with more minds working together.  https://floridapolytechnic.instructure.com/files/1874426/download?download_frd=1
+
+```
+
+
+
+# Problem 3
+
+In this problem you will practice some basic R operations. Include solutions to each items by inserting a new R chunk of code (make sure you run the chunk so that the output is displayed)
+
+(a) Create a variable called `my_name` that contains your preferred name.
+ 
+```{r}
+my_name <- "Nick_Ruocco"
+```
+ 
+
+
+(b) Create a variable called `name_length` that holds how many letters are in `my_name`.
+
+
+```{r}
+name_length <- 11
+```
+
+(c) Show which value is bigger: $e^\pi$ or $\pi^e$.
+```{r}
+a <- exp(pi)
+b <- pi^exp(1)
+# compare
+a < b
+b < a
+## e^pi is greater then pi^e
+```
+
+
+
+(d) Define a function called `add_tree` that takes a single argument and returns a value 3 times larger than the input.
+
+```{r}
+add_tree <- name_length * 3
+
+```
+
+
+(e) Use the colon operator `:` to create a vector `v` of numbers from 10 to 49. Find the length of this vector using the `length()` function.
+```{r}
+##e 
+v <- 10 : 49; v
+length(v)
+```
+
+
+
+(f) Use the `seq()` function to produce a range of number from -5 to 10 in 0.5 increments.
+```{r}
+seq(-5, 5, by=.5)
+```
+
+
+
